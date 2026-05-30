@@ -8,15 +8,11 @@ warnings.filterwarnings("ignore")
 
 def test_01():
 
-    # Get the venv Python executable
-    project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    venv_python = os.path.join(project_root, ".venv", "Scripts", "python.exe")
-
     # Test if the homework script runs without errors
     try:
         for model in ["elasticnet", "knn"]:
             subprocess.run(
-                [venv_python, "-m", "homework", "--model", model],
+                [sys.executable, "-m", "homework", "--model", model],
                 check=True,
             )
     except subprocess.CalledProcessError as e:
