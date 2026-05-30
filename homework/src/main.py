@@ -3,12 +3,12 @@ import uuid
 
 import mlflow
 
-from ._internals.calculate_metrics import calculate_metrics
-from ._internals.parse_argument import parse_argument
-from ._internals.prepare_data import prepare_data
-from ._internals.print_metrics import print_metrics
-from ._internals.save_model_if_better import save_model_if_better
-from ._internals.select_model import select_model
+from homework.src._internals.calculate_metrics import calculate_metrics
+from homework.src._internals.parse_argument import parse_argument
+from homework.src._internals.prepare_data import prepare_data
+from homework.src._internals.print_metrics import print_metrics
+from homework.src._internals.save_model_if_better import save_model_if_better
+from homework.src._internals.select_model import select_model
 
 FILE_PATH = "data/winequality-red.csv"
 TEST_SIZE = 0.25
